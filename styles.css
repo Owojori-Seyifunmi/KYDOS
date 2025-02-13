@@ -320,6 +320,9 @@ header{
     
 }
 
+.scroll{
+  padding: 1rem 3rem;
+}
 .scroll-down a{
     display: flex;
     justify-content: start;
@@ -334,7 +337,12 @@ header{
     /* color: var(--color-primary); */
 }
 
-
+.scroll2{
+    margin-top: 5rem;
+}
+.scroll2 small{
+  color: var(--color-bg);
+}
 /* HEADER SECTION END */
 
 
@@ -403,6 +411,8 @@ main{
 }
 /* AUTOSLIDER SECTION END */
 
+
+/* SERVICES SECTION START */
 
 .service-title{
     display: flex;
@@ -935,12 +945,24 @@ footer.container {
   }
 
   .nav-menu a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .nav-container{
-    background-color: blue;
+    
   }
+
+  .header-left h1{
+    font-size: 3rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-weight: 400;
+    
+}
+.header-left h1 span{
+    font-weight: 500;
+}
+  
   .about-container {
     display: flex;
     flex-direction: column;
@@ -949,5 +971,102 @@ footer.container {
   .bento-grid{
     grid-template-columns: repeat(2, 1fr);
   }
+  .small {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 200px;
+  }
   
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .nav-menu a {
+    font-size: 1rem;
+  }
+  .nav-container{
+    /* background-color: red; */
+  }
+
+  .button {
+    padding: 0.5rem 1.1rem; 
+  }
+
+  .header-container{
+    width: 100%;
+    gap: 1rem;
+    height: 100%;
+    /* text-transform: lowercase; */
+}
+
+.header-left h1{
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 7rem;
+    font-weight: 400;
+    
+}
+.header-left h1 span{
+    font-weight: 500;
+}
+
+.typing-demo{
+  font-size: .9rem;
+  padding-bottom: 2rem;
+  animation: typing 3s steps(53), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+  font-family: "lobster", serif;
+  margin: 0 auto;
+  color: var(--color-white);
+}
+@keyframes typing {
+  from{
+      width:0
+  }
+
+}
+@keyframes blink{
+  50%{
+      border-color: transparent;
+  }
+}
+.header-left p{
+  
+}
+
+.scroll-down a{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: .5rem;
+  
+}
+.scroll-down img{
+  width: 1.5rem;
+}
+.scroll-down small{
+  /* color: var(--color-primary); */
+}
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  .small {
+    grid-column: span 2;
+    grid-row: span 1;
+    height: 200px;
+  }
 }
