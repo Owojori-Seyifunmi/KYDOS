@@ -3,10 +3,11 @@ window.addEventListener('scroll', function() {
   const logo = document.querySelector('.logo-container img');
   if (window.scrollY > 50) {
     navbar.classList.add('scrolled');
-    logo.src = 'logo/OJS LOGO Black.png';
-  } else {
+    logo.src = 'logo/Kydos Logo red.png';
+  } 
+  else {
     navbar.classList.remove('scrolled');
-    logo.src = 'logo/OJS LOGO White.png';
+    logo.src = 'logo/Kydos Logo white.png';
   }
 });
 
